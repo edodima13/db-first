@@ -3,6 +3,11 @@ FROM `students`
 GROUP BY YEAR(`enrolment_date`);
 
 --------------------------------------
+
+SELECT COUNT(*), `office_address` 
+FROM `teachers` 
+GROUP BY `office_address`;
+
 --------------------------------------
 --------------------------------------
 --------------------------------------
