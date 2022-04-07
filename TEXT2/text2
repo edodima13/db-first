@@ -44,5 +44,12 @@ JOIN `courses` ON `courses`.`id` = `course_teacher`.`course_id`
 WHERE `teachers`.`id` = 44;
 
 --------------------------------------
+
+SELECT `students`.`id`, `students`.`surname`, `students`.`name`, `departments`.`name` 
+FROM `students` 
+JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` 
+JOIN `departments` ON `degrees`.`department_id` = `departments`.`id` 
+ORDER BY `students`.`surname` ASC, `students`.`name` ASC;
+
 --------------------------------------
 --------------------------------------
