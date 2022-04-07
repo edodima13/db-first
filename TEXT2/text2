@@ -15,4 +15,9 @@ FROM `exam_student`
 GROUP BY `exam_id`;
 
 --------------------------------------
+
+SELECT COUNT(*) `courses`,`department_id` 
+FROM `degrees` 
+GROUP BY `department_id`;
+
 --------------------------------------
