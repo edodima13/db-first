@@ -52,4 +52,11 @@ JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
 ORDER BY `students`.`surname` ASC, `students`.`name` ASC;
 
 --------------------------------------
+
+SELECT `degrees`.`id`,`degrees`.`name`,`courses`.`name`, `teachers`.`surname`, `teachers`.`name` 
+FROM `degrees` 
+JOIN `courses` ON `degrees`.`id` = `courses`.`degree_id` 
+JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id` 
+JOIN `teachers` ON `teachers`.`id` = `course_teacher`.`teacher_id`
+
 --------------------------------------
